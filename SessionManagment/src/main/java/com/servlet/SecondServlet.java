@@ -51,11 +51,12 @@ public class SecondServlet extends HttpServlet {
 	        
 	        if (name!=null) {
 	        	out.println("<h1>Hello " + name + " welcome Back to my Servlet 2.By HttpSession</h1>");
+	        	out.println("<h1>Hello " + name + " Data Saved Successfully</h1>");
 			}else {
 				out.println("<h1>You are new user go to home page and submit your name..</h1>");
 			}
 	        
-	        
+	        out.println("<h1><a href='Logout'>Logout</a></h1>");
 
 	        out.println("</body>");
 	        out.println("</html>");
